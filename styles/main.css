@@ -1,0 +1,128 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    color: #7fba00;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #7fba00;
+    padding: 15px 40px;
+    transition: 0.3s linear;
+}
+
+.button__sign-in:hover {
+    background: #7fba00;
+    color: #fff;
+}
+
+.button--download {
+    border: none;
+    color: #fff;
+    background-color: #7fba00;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.button--download:hover {
+    background: #199fe2;
+}
+.header {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #bad7f6;
+    margin-right: 30px;
+    transition: 0.3s linear;
+}
+
+.menu__link:last-child {
+    margin-right: 50px;
+}
+
+.menu__link:hover {
+    color: #fff;
+}
+
+.home {
+    background: #559dec url("../img/bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home__content {
+    margin-top: 270px;
+    max-width: 830px;
+}
+
+.home__title {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    line-height: 1.3;
+}
+
+.home__button {
+    margin-bottom: 100px;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-list__item {
+    margin-right: 30px;
+}
+
+.icon-list__item:last-child {
+    margin-right: 0;
+}
+
+.icon-list__item svg {
+    width: 25px;
+    fill: #fff;
+    transition: 0.3s linear;
+}
+.icon-list__item svg:hover {
+    fill: #7fba00;
+}
