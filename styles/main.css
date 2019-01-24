@@ -18,11 +18,6 @@ img {
     height: auto;
 }
 
-.icon {
-    width: 50px;
-    height: auto;
-}
-
 .button {
     display: inline-block;
     color: #7fba00;
@@ -32,6 +27,7 @@ img {
     border: 1px solid #7fba00;
     padding: 15px 40px;
     transition: 0.3s linear;
+    cursor: pointer;
 }
 
 .button__sign-in:hover {
@@ -46,12 +42,23 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1.4px;
-    transition: 0.3s linear;
-    cursor: pointer;
 }
 
 .button--download:hover {
     background: #199fe2;
+}
+
+.button--call {
+    border: 1px solid #2ba7de;
+    color: #2ba7de;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.button--call:hover {
+    background: #2ba7de;
+    color: #fff;
 }
 
 .header {
@@ -102,7 +109,7 @@ img {
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 80px;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 .home__button {
@@ -147,16 +154,20 @@ img {
     width: 31%;
 }
 
-.chat__icon {
-    margin-right: 30px;
-}
-
 .chat__title {
     font-size: 42px;
     color: #484848;
     margin-bottom: 30px;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 85px;
 }
-
+.chat__title:before {
+    content: url("../img/icons/msg-smile.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .chat__description {
     font-size: 20px;
     line-height: 1.55;
@@ -184,9 +195,51 @@ img {
 .share__title {
     font-size: 42px;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .share__description {
     font-size: 20px;
     line-height: 1.5;
+}
+
+.call {
+    background: #f2f6f7 url("../img/bg-call.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 640px;
+}
+
+.call__content {
+    width: 35%;
+    margin-right: auto;
+}
+
+.call__icon {
+    margin-right: 30px;
+
+}
+
+.call__title {
+    font-size: 42px;
+    color: #484848;
+    margin-bottom: 70px;
+    position: relative;
+    padding-left: 85px;
+    line-height: 1.2;
+}
+
+.call__title:before {
+    content: url("../img/icons/msg-call.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.call__description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #484848;
+    margin-bottom: 60px;
 }
