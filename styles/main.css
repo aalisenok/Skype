@@ -48,7 +48,7 @@ img {
     background: #199fe2;
 }
 
-.button--call {
+.button--blue {
     border: 1px solid #2ba7de;
     color: #2ba7de;
     font-weight: 400;
@@ -56,7 +56,7 @@ img {
     letter-spacing: 1.4px;
 }
 
-.button--call:hover {
+.button--blue:hover {
     background: #2ba7de;
     color: #fff;
 }
@@ -162,12 +162,14 @@ img {
     position: relative;
     padding-left: 85px;
 }
+
 .chat__title:before {
     content: url("../img/icons/msg-smile.png");
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .chat__description {
     font-size: 20px;
     line-height: 1.55;
@@ -218,7 +220,6 @@ img {
 
 .call__icon {
     margin-right: 30px;
-
 }
 
 .call__title {
@@ -242,4 +243,55 @@ img {
     line-height: 1.5;
     color: #484848;
     margin-bottom: 60px;
+}
+
+.services {
+    padding-top: 150px;
+    padding-bottom: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.services__content {
+    max-width: 850px;
+
+}
+.services__title {
+    color: #484848;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.services__description {
+    color: #484848;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service__item {
+    margin-bottom: 100px;
+    max-width: 200px;
+    padding: 10px;
+}
+.service__icon {
+    margin-bottom: 50px;
+
+}
+.service__title {
+    color: #00b0f0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.service__description {
+    color: #484848;
+    font-size: 18px;
+    line-height: 1.3;
 }
