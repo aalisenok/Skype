@@ -14,32 +14,40 @@
 <body>
 
 <!---------- START HEADER ---------->
-<header class="header">
-    <div class="container">
-        <div class="header__content">
-            <a href="#" class="logo">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-            <nav class="menu">
-                <a href="#" class="menu__link">Downloads</a>
-                <a href="#" class="menu__link">Business</a>
-                <a href="#" class="menu__link">Prices</a>
-                <a href="#" class="menu__link">Help</a>
-                <a href="#" class="button button__sign-in">Sign in</a>
-            </nav>
-        </div>
-    </div>
-</header>
+
 <!---------- END HEADER ---------->
 
 <!---------- START HOME ---------->
-<section class="home">
+<header class="header">
+    <div class="navigation">
+        <div class="container">
+            <div class="navigation__content">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <nav class="menu menu--closed">
+                    <ul class="menu-list">
+                        <a href="#" class="menu-list__link">Downloads</a>
+                        <a href="#" class="menu-list__link">Business</a>
+                        <a href="#" class="menu-list__link">Prices</a>
+                        <a href="#" class="menu-list__link">Help</a>
+                    </ul>
+                    <a href="#" class="button button__sign-in menu-list__button">Sign in</a>
+                    <a href="#" class="burger menu__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="home__content">
-            <h1 class="home__title">Skype keeps the world talking. Call, message
+        <div class="header__content">
+            <h1 class="header__title">Skype keeps the world talking. Call, message
                 and share whatever you want for free.
             </h1>
-            <a href="#" class="button button--download home__button">Download Skype</a>
+            <a href="#" class="button button--download header__button">Download Skype</a>
         </div>
         <div class="platform">
             <ul class="icon-list">
@@ -78,9 +86,8 @@
             </ul>
             <p class="platform__description">Stay in touch no matter what device you use</p>
         </div>
-
     </div>
-</section>
+</header>
 <!---------- END HOME ---------->
 
 <!---------- START CHAT ---------->
@@ -213,7 +220,8 @@
                         <a href="#" class="regulations__link">Privacy and Cookie policy</a>
                         <a href="#" class="regulations__link">About our ads.</a>
                     </ul>
-                </div>>
+                </div>
+                >
                 <div class="footer-bottom__copyright">
                     <h3 class="footer-bottom__title">Microsoft</h3>
                     <p class="footer-bottom__text">© 2015 Skype and/or Microsoft.</p>
@@ -223,7 +231,6 @@
     </div>
 </footer>
 <!---------- END FOOTER ---------->
-
-
+<script src="js/main.js"></script>
 </body>
 </html>

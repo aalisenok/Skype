@@ -60,59 +60,105 @@ img {
     background: #2ba7de;
     color: #fff;
 }
-
-.header {
+.burger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.burger span {
+    height: 4px;
+    width: 30px;
+    background: #2ba7de;
+    position: absolute;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.burger span:last-child {
+    margin-bottom: 0;
+}
+.burger span:nth-child(1) {
+    top: 16px;
+}
+.burger span:nth-child(2) {
+    top: 23px;
+}
+.burger span:nth-child(3) {
+    top: 30px;
+}
+.animate span:nth-child(2) {
+    display: none;
+}
+.animate span:nth-child(1) {
+    transform: rotate(45deg);
+    left: 10px;
+    top: 23px
+}
+.animate span:nth-child(3) {
+    transform: rotate(-45deg);
+    left: 10px;
+    top: 23px
+}
+.navigation {
     position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
 }
 
-.header__content {
+.navigation__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.menu {
+    display: flex;
+    align-items: center;
+}
 
-.menu__link {
+.menu-list {
+    margin-right: 50px;
+}
+.menu-list__link {
     text-decoration: none;
     color: #bad7f6;
     margin-right: 30px;
     transition: 0.3s linear;
 }
 
-.menu__link:last-child {
-    margin-right: 50px;
+.menu-list__link:last-child {
+    margin-right: 0;
 }
 
-.menu__link:hover {
+.menu-list__link:hover {
     color: #fff;
 }
 
-.home {
+.header {
     background: #559dec url("../img/bg-home.jpg") center no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.home__content {
-    margin-top: 270px;
+.header__content {
+    margin-top: 200px;
     max-width: 830px;
 }
 
-.home__title {
+.header__title {
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 80px;
     line-height: 1.5;
 }
 
-.home__button {
+.header__button {
     margin-bottom: 100px;
 }
 
