@@ -51,6 +51,22 @@
     .call {
         padding: 0;
     }
+    .services, .footer-top, .footer-bottom {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .service {
+        justify-content: center;
+    }
+    .service__item {
+        max-width: 300px;
+    }
+    .services__description, .service__item {
+        margin-bottom: 30px;
+    }
+    .service__icon {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -75,13 +91,20 @@
         margin-bottom: 30px;
     }
 
-    .chat__title, .call__title {
+    .chat__title, .call__title, .share__title, .services__title {
         font-size: 30px;
         margin-bottom: 30px;
     }
 
     .call__description {
         margin-bottom: 30px;
+    }
+    .footer-bottom__content {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-bottom__copyright {
+        text-align: left;
     }
 
 }
