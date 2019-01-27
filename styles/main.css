@@ -17,6 +17,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .button {
@@ -192,9 +193,6 @@ img {
     justify-content: space-between;
 }
 
-.chat__phones {
-    margin-bottom: -2px;
-}
 .chat__text {
     max-width: 375px;
     margin-top: 200px;
@@ -250,9 +248,6 @@ img {
     font-size: 20px;
     line-height: 1.5;
 }
-.share__tablet {
-    margin-bottom: -2px;
-}
 
 .call {
     background: #f2f6f7;
@@ -265,9 +260,7 @@ img {
     max-width: 900px;
     margin: 0 auto;
 }
-.call__phones {
-    margin-bottom: -2px;
-}
+
 .call__text {
     margin-top: 35px;
     margin-bottom: 90px;
@@ -335,8 +328,10 @@ img {
     padding: 10px;
 }
 .service__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
-
 }
 .service__title {
     color: #00b0f0;
