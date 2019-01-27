@@ -4,6 +4,16 @@
 
 @media (max-width: 992px){
 
+    .chat__phones {
+        display: none;
+    }
+    .chat__content {
+        justify-content: center;
+    }
+    .chat__text {
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -30,6 +40,11 @@
         font-weight: 400;
         width: 20%;
     }
+    .chat__text {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 480px){
@@ -49,5 +64,6 @@
     .header__button {
         margin-bottom: 30px;
     }
+
 
 }

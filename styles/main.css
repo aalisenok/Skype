@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
+    min-width: 320px;
 }
 
 .container {
@@ -186,18 +187,19 @@ img {
 .icon-list__item svg:hover {
     fill: #7fba00;
 }
-
-.chat {
-    background: #fff url("../img/bg-chat.jpg") center no-repeat;
-    background-size: cover;
+.chat__content {
     display: flex;
-    align-items: center;
-    min-height: 640px;
+    justify-content: space-between;
 }
 
-.chat__content {
+.chat__phones {
+    margin-bottom: -2px;
+}
+.chat__text {
+    max-width: 375px;
     margin-left: auto;
-    width: 31%;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .chat__title {
