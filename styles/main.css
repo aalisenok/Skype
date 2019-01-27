@@ -141,7 +141,7 @@ img {
 .header {
     background: #559dec url("../img/bg-home.jpg") center no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -225,9 +225,7 @@ img {
 }
 
 .share {
-    background: #2ba7de url("../img/bg-share.jpg") center no-repeat;
-    background-size: cover;
-    min-height: 760px;
+    background: #2ba7de;
     padding-top: 50px;
 }
 
@@ -237,7 +235,9 @@ img {
     max-width: 755px;
 
 }
-
+.share__text {
+    margin-bottom: 50px;
+}
 .share__icon {
     margin-bottom: 30px;
 }
@@ -251,6 +251,9 @@ img {
 .share__description {
     font-size: 20px;
     line-height: 1.5;
+}
+.share__tablet {
+    margin-bottom: -2px;
 }
 
 .call {
