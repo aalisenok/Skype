@@ -1,28 +1,28 @@
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
 
-    .chat__phones {
+    .chat__phones, .call__phones {
         display: none;
     }
-    .chat__content {
+
+    .chat__content, .call__content {
         justify-content: center;
-    }
-    .chat__text {
-        margin: 0;
     }
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .menu-list, .menu-list__button {
         display: none;
     }
+
     .burger {
         display: block;
     }
+
     .menu--opened .menu-list {
         display: flex;
         flex-direction: column;
@@ -35,35 +35,53 @@
         background: #2ba7de;
         text-align: left;
     }
+
     .menu--opened .menu-list__link {
         margin: 15px;
         font-weight: 400;
         width: 20%;
     }
-    .chat__text {
+
+    .chat__text, .call__text {
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .call {
+        padding: 0;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .navigation {
         top: 10px;
     }
+
     .menu--opened .menu-list {
         top: -10px;
     }
+
     .header__content {
         margin-top: 100px;
     }
+
     .header__title {
         font-size: 24px;
         margin-bottom: 30px;
     }
+
     .header__button {
         margin-bottom: 30px;
     }
 
+    .chat__title, .call__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .call__description {
+        margin-bottom: 30px;
+    }
 
 }

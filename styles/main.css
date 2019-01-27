@@ -197,9 +197,8 @@ img {
 }
 .chat__text {
     max-width: 375px;
-    margin-left: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .chat__title {
@@ -233,7 +232,6 @@ img {
     text-align: center;
     margin: 0 auto;
     max-width: 755px;
-
 }
 .share__text {
     margin-bottom: 50px;
@@ -257,16 +255,23 @@ img {
 }
 
 .call {
-    background: #f2f6f7 url("../img/bg-call.jpg") center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    min-height: 640px;
+    background: #f2f6f7;
+    padding-top: 100px;
 }
 
 .call__content {
-    width: 35%;
-    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.call__phones {
+    margin-bottom: -2px;
+}
+.call__text {
+    margin-top: 35px;
+    margin-bottom: 90px;
+    max-width: 400px;
 }
 
 .call__icon {
