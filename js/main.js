@@ -15,5 +15,4 @@ window.onload = function () {
             burger.classList.remove('animate');
         }
     });
-    
 };
